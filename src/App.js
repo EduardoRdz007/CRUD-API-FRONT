@@ -21,6 +21,13 @@ function App() {
       foodName: foodName, 
       days: days
     });
+    
+  const addToList=() =>{
+    Axios.post("http://localhost:3001/insert", {
+      foodName: foodName, 
+      days: days
+    });
+
   };
 
   const updateFood = (id) =>{
