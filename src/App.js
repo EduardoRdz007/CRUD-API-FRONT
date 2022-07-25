@@ -21,13 +21,6 @@ function App() {
       foodName: foodName, 
       days: days
     });
-    
-  const addToList=() =>{
-    Axios.post("http://localhost:3001/insert", {
-      foodName: foodName, 
-      days: days
-    });
-
   };
 
   const updateFood = (id) =>{
@@ -35,6 +28,13 @@ function App() {
       id: id, 
       newFoodName: newFoodName,
     });
+
+    const updateFood = (id) =>{
+      Axios.put("http://localhost:3001/update",{
+        id: id, 
+        newFoodName: newFoodName,
+      });
+    
   };
 
   return (
