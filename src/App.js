@@ -29,11 +29,7 @@ function App() {
       newFoodName: newFoodName,
     });
 
-    const updateFood = (id) =>{
-      Axios.put("http://localhost:3001/update",{
-        id: id, 
-        newFoodName: newFoodName,
-      });
+    
     
   };
 
